@@ -2,37 +2,66 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.newHeader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100vmax;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.headerLogo{
+  margin-top: 80px;
+  margin-right: 50px;
+}
+
+.logo{
+  box-shadow: 7px 10px 10px #000000, 0px 2px 2px #333;
+}
+
+.headerDesc{
+  margin-top: 80px;
+  min-height: 300px;
+  max-width: 80vh;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: flex-end; 
+}
+
+.headerDesc h1{
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.headerDesc p{
+  font-size: 1.2em;
+  color: #efefef;
+}
+
+.btnSelect{
+  cursor: pointer;
+  width: 100px;
+  align-self: flex-end;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(20, 70, 32, .2);
+  box-sizing: border-box;
+  padding: 6px 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+
+}
+
+.btnSelect:active{
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
