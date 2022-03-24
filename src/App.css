@@ -16,17 +16,17 @@
 }
 
 .headerLogo{
-  margin-top: 80px;
   margin-right: 50px;
 }
 
 .logo{
+  width: 80px;
+  border-radius: 5px;
   box-shadow: 7px 10px 10px #000000, 0px 2px 2px #333;
 }
 
 .headerDesc{
-  margin-top: 80px;
-  min-height: 300px;
+  margin-top: 20px;
   max-width: 80vh;
   display: flex;
   flex-direction: column;
@@ -35,27 +35,27 @@
 }
 
 .headerDesc h1{
-  font-size: 1.8em;
+  font-size: 1em;
   font-weight: bold;
 }
 
 .headerDesc p{
-  font-size: 1.2em;
+  font-size: 0.8em;
   color: #efefef;
 }
 
 .btnSelect{
   cursor: pointer;
-  width: 100px;
+  width: 60px;
   align-self: flex-end;
   background-color: #2ea44f;
   border: 1px solid rgba(27, 31, 35, .15);
   border-radius: 6px;
   box-shadow: rgba(20, 70, 32, .2);
   box-sizing: border-box;
-  padding: 6px 10px;
+  padding: 8px 10px;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   color: white;
 
