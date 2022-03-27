@@ -10,6 +10,7 @@ function App() {
           <h1>My PlayList</h1>
           {data.map((item) => (
             <Album
+              key={item.id}
               albumImage={item.album.images[1].url}
               albumTitle={item.name}
               albumArtist={item.artists[0].name}
