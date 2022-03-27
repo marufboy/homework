@@ -2,19 +2,21 @@ import "./App.css";
 import data from "./Data";
 import Album from "./components/AlbumItem";
 
-const albumImage = data.album.images[1].url;
-const albumTitle = data.album.name;
-const albumArtist = data.album.artists[0].name;
-
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Album
-          albumImage={albumImage}
-          albumTitle={albumTitle}
-          albumArtist={albumArtist}
-        />
+        <div className="playlistContainer">
+          <h1>My PlayList</h1>
+          {data.map((item) => (
+            <Album
+              key={item.id}
+              albumImage={item.album.images[1].url}
+              albumTitle={item.name}
+              albumArtist={item.artists[0].name}
+            />
+          ))}
+        </div>
       </header>
     </div>
   );

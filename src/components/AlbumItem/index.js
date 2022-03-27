@@ -1,5 +1,5 @@
 const Album = ({albumImage, albumTitle, albumArtist}) => (
-  <div className="newHeader">
+  <div className="playlistItem">
     <div className="headerLogo">
       <img className="logo" src={albumImage} alt="Logo" />
     </div>
